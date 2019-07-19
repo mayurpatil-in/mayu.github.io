@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-bar{
+    position:sticky;
+    top:0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: linear-gradient(to right,#00c6a7,#1e4d92);
+    padding: 0 !important;
+}
+.navbar-brand img{
+    height: 60px;
+    padding-left: 20px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-size: 90%;
+    font-weight: 100%;
+    float:center;
+    text-align: center;
+    
+}
+
+.navbar-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+
+}
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+/*----------banner section-----------*/
+#banner{
+    background-image: linear-gradient(to right,#00c6a7,#1e4d92);
+    color: #fff;
+     
+}
+.bottom-img{
+    width: 100%;
+    padding: 0%;
+}
+.rightside{ width: 55%; height: 300px; color: white;font-family: 'Montserrat', sans-serif; text-align: center;margin-top: 80px; padding: 40px;}
+.rightside h1{ 
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.rightside button{   
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ; 
+}
+.rightside button:hover{
+      background: linear-gradient(57deg, #1E4D92, #00C6A7 );   
+}
+
+.change-content{
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(236, 243, 243);
+}
+.change-content:after{
+    content: '';
+    animation: changetext 10s infinite linear; 
+    font-size: 3rem;
+}
+@keyframes changetext{
+    0%{content: 'Software Engineer';}
+    20%{content: 'Software Developer';}
+    40%{content: 'Web Developer';}
+    60%{content: 'designer';}
+    80%{content: 'front end developer';}
+    100%{content: 'full stack developer';}
+}
+
+.changecon{
+    
+    animation: colorchangemayur 2s infinite; 
+    
+}
+@keyframes colorchangemayur{
+    0%{color: rgb(219, 32, 63);}
+    25%{color: #bf55ec;}
+    75%{color: white;}
+    100%{color: goldenrod;}    
+}
+
+@media screen and (max-width: 576px) {
+    .rightside{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .rightside h1{
+      font-size: 33px;
+    }
+    .h22{
+       font-size: 15px;
+    }
+    .change-content:after{
+        font-size: 1.5rem;
+    }
+  }
